@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="two.css">
+        <script>
+            function val(){
+                var first=frm.fn.value;
+                var last=frm.ln.value;
+                var Email=frm.email.value;
+                var user=frm.User.value;
+                var pass=frm.pswd.value;
+                var conf=frm.Conpswd.value;
+
+                var first1=first.length;
+                var last1=last.length;
+                var email1=Email.length;
+                var user1=user.length;
+                var pass1=pass.length;
+                var conf1=conf.length;
+
+                if(first1==0)
+                {
+                    alert("Enter first name");
+                    return false;
+                }
+                if(last1==0){
+                    alert("Enter last name");
+                    return false;
+                }
+                if(email1==0){
+                    alert("Enter emai id");
+                    return false;
+                }
+                if(user1==0){
+                    alert("Enter the username");
+                    return false;
+                }
+                if(pass1==0 || conf1==0){
+                    alert("Enter the password");
+                    return false;
+
+                }
+                if(pass!=conf){
+                    alert("Both are not Correct.!");
+                    return false;
+                }
+
+
+                
+                
+            }
+        </script>
+        
+    </head>
+    <body>
+        <h1>Registration</h1>
+        <form name="frm" action="main_body.html" onsubmit="return val()">
+            <table class="center" border="0" >
+                <tr>
+                    <td>FirstName</td>
+                    <td>: <input type="text" name="fn" size="25"></td>
+                </tr>
+                <tr>
+                    <td>LastName</td>
+                    <td>: <input type="text" name="ln" size="25"></td>
+                </tr>
+                <tr>
+                    <td>email_id</td>
+                    <td>: <input type="text" name="email" size="25"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>: <input type="radio" name="gender">Male<br>&nbsp;&nbsp;<input type="radio" name="gender">Female</td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td>: <input type="text" name="User" size="25"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>: <input type="password" name="pswd" size="25" maxlength="8"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td>: <input type="password" name="Conpswd" size="25" maxlength="8"></td>
+                </tr>
+                
+                
+
+    
+            </table><br>
+            <input type="submit" name="submit">
+
+
+        </form>
+        
+        
+
+        
+    </body>
+</html>

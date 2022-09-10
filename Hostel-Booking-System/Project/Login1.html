@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+<center>
+    <form name="frm">
+        <table class="formcontrols" >
+            <tr>
+                <td>
+                    <label for="firstName">FirstName:</label>
+                </td>
+                <td  style="padding-left:10px;">
+                    <input id="firstName" name="firstName" value=""><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Test">Last name:</label>
+                </td>
+                <td  style="padding-left:10px;">
+                    <input id="lastName" name="lastName" value="">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+    
+</center>  
+<script>
+    function validate(){
+        var user=frm.username.value;
+        var user1=user.length;
+        var pass=frm.pswd.value;
+        var pass1=pass.length;
+        if(user1==0){
+            alert("Enter the USER-NAME");
+            return false;
+        }
+        if(pass1==0||pass1<8){
+            alert("Enter minimum 8 charecteristics");
+            return false;
+        }
+    }
+    
+    
+</script> 
+</body>
+</html>

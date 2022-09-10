@@ -1,0 +1,19 @@
+body{
+    background-image:url(keerthiReddy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    text-align: center;
+    
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+.btn{
+    justify-content: center;
+    align-items: center;
+    
+}

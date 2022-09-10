@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="one.css">
+        <title>Login</title>
+
+        <script>
+            function validate(){
+                var user=frm.username.value;
+                var user1=user.length;
+                var pass=frm.pswd.value;
+                var pass1=pass.length;
+                if(user1==0){
+                    alert("Enter the USER-NAME");
+                    return false;
+                }
+                if(pass1==0||pass1<8){
+                    alert("Enter minimum 8 charecteristics");
+                    return false;
+                }
+            }
+            
+            
+        </script>
+    </head>
+    <body>
+        <center>
+        <h1>LOGIN</h1>
+        <fieldset class="container">
+            <div>
+                <form name="frm" action="main_body.html" onsubmit="return validate()" >
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="Username">User Name </label>
+                            </td>
+                        
+                            <td style="padding-left:10px;">
+                                : <input type="text" size="25" name="username"><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Password">Password</label>
+                            </td> 
+                            <td style="padding-left:10px;">
+                               : <input type="password" name="pswd" maxlength="8" size="25">
+                            </td>   
+                            
+                        </tr>
+        
+        
+        
+                    </table><br>
+                    <input type="submit" name="submit">
+                </form>
+                <button onclick="window.location.href='login.html'">Reset</button><br><br>
+                
+                
+                <a href="keerthiReddy.jpg">Forgot Password</a> <br><br>
+                <button onclick="window.location.href='sinup.html'">Sign up</button>
+            </div>
+        </fieldset>
+
+        </center>
+        
+    </body>
+</html> 
